@@ -1,0 +1,7 @@
+.just_rent{
+  display: flex;
+  border: 1px solid #0c0c0c;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 50px;
+}

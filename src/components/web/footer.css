@@ -1,0 +1,62 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px; /* Padding to create spacing */
+  max-width: 100vw;
+  text-align: center; /* Center the text for mobile */
+ /* Make sure the padding is included in the width */
+}
+
+.footer-header {
+  margin-bottom: 10px; /* Space between the header and horizontal rule */
+  font-size: 24px; /* Make the header slightly larger */
+}
+
+.footer-copyright {
+  font-size: 14px; /* Optional: Adjust font size for readability */
+}
+
+/* Styling for the horizontal rule */
+.footer hr {
+  border-color: gray; /* Optional: Subtle horizontal rule */
+  margin: 10px 0;
+  width: 80%; /* Limit the width of the rule */
+}
+
+/* Responsive Layout for smaller devices */
+@media (max-width: 768px) {
+  .footer {
+      padding: 10px; /* Adjust padding for medium screens */
+  }
+
+  .footer-header {
+      font-size: 20px; /* Smaller header text for medium devices */
+  }
+
+  .footer-copyright {
+      font-size: 12px; /* Slightly smaller font for copyright text */
+  }
+
+  .footer hr {
+      width: 90%; /* Reduce the width of the horizontal rule on medium screens */
+  }
+}
+
+/* For very small screen sizes (max-width 480px) */
+@media (max-width: 480px) {
+  .footer {
+      padding: 10px; /* Reduce padding for very small devices */
+  }
+
+  .footer-header {
+      font-size: 18px; /* Make the header text smaller */
+  }
+
+  .footer-copyright {
+      font-size: 10px; /* Smaller font size for copyright text */
+  }
+
+  .footer hr {
+      width: 95%; /* Further reduce the width of the horizontal rule */
+  }
+}
