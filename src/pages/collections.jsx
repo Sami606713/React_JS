@@ -1,5 +1,5 @@
 import React from 'react'
-import { Slider } from '../components/web/cards/slider.jsx'
+import { Slider } from '../components/web/sliders/slider.jsx'
 
 export default function Collections() {
   const products = [

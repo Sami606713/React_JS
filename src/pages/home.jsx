@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../components/web/footer/footer.jsx'
 import { First_Card, Rent_Card, Party_Card } from '../components/web/cards/card.jsx'
-import { Slider, Pic_Slider } from '../components/web/cards/slider.jsx'
+import { Slider, Pic_Slider } from '../components/web/sliders/slider.jsx'
 
 export default function Home() {
   const products = [
@@ -49,7 +49,7 @@ export default function Home() {
   ]
   return (
     <>
-      <First_Card />
+      <First_Card  props={{"head":"Rent Your Dream Dress Now!","text":"Rent a designer-quality dress, or buy one to wear on repeat.","show_btn":true,"reverse":false}}/>
       <div className="just_rent flex flex-col md:flex-row bg-white mt-12 p-5 md:p-20 gap-8 md:gap-10">
         <Rent_Card
           item={{ "text": "Buy your favorite dress and wear it without repeat", "head": "Just Rent", "img_url": 'src/assets/image-11.jpg', "btn_text": "Rent Now" }}
