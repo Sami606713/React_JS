@@ -65,7 +65,7 @@ export default function Home() {
             Huge Collection Of Designer Dress
           </h1>
         </div>
-          <Slider products={products} />
+          <Slider products={products} options={{"show_price_tag":true}} />
         <div className="mt-12 flex justify-center text-black">
           <button className="bg-black p-2 text-center font-bold text-white hover:bg-white hover:text-black border rounded-sm">
             Browse Our Collection

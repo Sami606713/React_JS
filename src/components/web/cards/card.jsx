@@ -79,7 +79,7 @@ export function Party_Card({ item }) {
       <div className="w-full lg:w-1/2">
         <img
           alt="ecommerce"
-          className="h-auto w-full object-cover sm:h-72 md:h-80 lg:h-[400px]]"
+          className="h-auto w-full object-cover bg-no-repeat sm:h-72 md:h-80 lg:h-[400px]]"
           src={item.img_url}
         />
       </div>

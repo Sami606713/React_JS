@@ -1,22 +1,24 @@
 import React from 'react';
 
-export function Slider({products }) {
+export function Slider({products,options }) {
   return (
     <section className="bg-white">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {products?.map((product) => (
             <div
               key={product.id}
-              className="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+              className="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer">
               <div className="relative">
                 <img
                   alt={product.text}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover bg-no-repeat bg-center bg-cover"
                   src={product.img_url}
                   
                 />
               </div>
-              <div className="p-4">
+              {
+                options?.show_price_tag &&(
+                <div className="p-4">
                 <h3 className="text-gray-900 font-medium text-lg mb-2">
                   {product.text}
                 </h3>
@@ -31,7 +33,8 @@ export function Slider({products }) {
                     {product.sale_price}
                   </div>
                 </div>
-              </div>
+                </div>)
+              }
             </div>
           ))}
         </div>
