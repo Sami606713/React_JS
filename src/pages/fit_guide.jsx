@@ -1,5 +1,5 @@
 import React from 'react'
-import Fit_Guide_Card from '../components/web/cards/fit_guide_card'
+import { Fit_Guide_Card } from '../components/web/cards/fit_guide_card'
 import { Slider } from '../components/web/sliders/slider'
 
 export default function Fit_Guide() {
@@ -38,7 +38,8 @@ export default function Fit_Guide() {
         </div>
 
         <div className='mt-4 text-1xl'>
-          <button className='border-2 border-black px-7 py-3 bg-black text-white hover:bg-white hover:text-black'> Start Fit Guide</button>
+          <button className='border-2 border-black px-7 py-3 bg-black text-white hover:bg-white
+           hover:text-black'> Start Fit Guide</button>
         </div>
       </section>
 
@@ -49,15 +50,18 @@ export default function Fit_Guide() {
 
       {/* People like */}
       <div>
-        <div className='w-[50vw] mx-auto mt-10'>
-          <h1 className='text-6xl text-center'>1000+ People find their perfect size</h1>
+        <div className="w-[90vw] sm:w-[70vw] lg:w-[50vw] mx-auto mt-10">
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl text-center font-bold">
+            1000+ People find their perfect size
+          </h1>
         </div>
 
         {/* Slider */}
         <Slider products={products} options={{ "show_price_tag": false }} />
 
         <div className='mt-4 text-1xl mb-20 text-center'>
-          <button className='border-2 border-black px-7 py-3 bg-black text-white hover:bg-white hover:text-black'> Start Fit Guide</button>
+          <button className='border-2 border-black px-7 py-3 bg-black text-white hover:bg-white
+           hover:text-black'> Start Fit Guide</button>
         </div>
 
       </div>

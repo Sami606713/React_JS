@@ -124,8 +124,8 @@ export default function Collections() {
         </div>
 
         {/* Collection Div */}
-        <div className='text-white mt-5 mb-5 border-2 border-red w-full md:w-[70%] lg:w-[70%] h-auto'>
-          <Slider products={products} />
+        <div className='text-white mt-5 mb-5  w-full md:w-[70%] lg:w-[70%] h-auto'>
+          <Slider products={products} options={{"show_price_tag":true}} />
 
           {/* moving buttons */}
           <div className='flex justify-end gap-4 mt-5'>

@@ -1,9 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Footer from '../components/web/footer/footer.jsx'
 import { First_Card, Rent_Card, Party_Card } from '../components/web/cards/card.jsx'
 import { Slider, Pic_Slider } from '../components/web/sliders/slider.jsx'
 
 export default function Home() {
+  const navigate = useNavigate()
   const products = [
     {
       "id": 1,
@@ -67,7 +69,9 @@ export default function Home() {
         </div>
           <Slider products={products} options={{"show_price_tag":true}} />
         <div className="mt-12 flex justify-center text-black">
-          <button className="bg-black p-2 text-center font-bold text-white hover:bg-white hover:text-black border rounded-sm">
+          <button className="bg-black p-2 text-center font-bold text-white hover:bg-white hover:text-black border rounded-sm" onClick={
+                    ()=>navigate('/collection')
+                }>
             Browse Our Collection
           </button>
         </div>

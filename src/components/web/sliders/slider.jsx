@@ -1,17 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export function Slider({products,options }) {
+  const navigate = useNavigate()
   return (
-    <section className="bg-white">
+    <section className="bg-white mt-0">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {products?.map((product) => (
             <div
               key={product.id}
-              className="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer">
+              className="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer" onClick={()=>navigate("/dress_detail")}>
               <div className="relative">
                 <img
                   alt={product.text}
-                  className="h-full w-full object-cover bg-no-repeat bg-center bg-cover"
+                  className="h-full w-full object-cover bg-no-repeat bg-center bg-cover cursor-pointer"
                   src={product.img_url}
                   
                 />

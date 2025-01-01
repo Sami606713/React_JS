@@ -20,7 +20,7 @@ export default function Footer() {
         </header>
       </div>
       <hr />
-      <div className="footer-copyright bg-black text-white justify-center md:mb-0 title-font mb-4 flex items-center font-medium p-5">
+      <div className="footer-copyright bg-black text-white justify-center md:mb-0 title-font flex items-center font-medium p-5">
         <p>&copy;Borrowed Bridesmaid, 2024. All rights reserved.</p>
       </div>
     </div>

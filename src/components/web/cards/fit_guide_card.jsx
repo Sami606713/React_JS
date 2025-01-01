@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Fit_Guide_Card() {
+export function Fit_Guide_Card() {
     return (
         <div>
             <section class="text-black bg-white body-font">
