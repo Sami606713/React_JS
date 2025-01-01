@@ -1,15 +1,19 @@
-import React from 'react'
+import React from 'react';
 
 export function Cart_Card() {
     return (
-        <div className="flex flex-col gap-6 border-2 bg-white p-6 lg:flex-row">
+        <div className="flex flex-col gap-6 bg-white border-b-2 border-silver p-6 lg:flex-row mb-5 mt-5 mx-10">
             {/* <!-- Text Content --> */}
-            <div className="flex-1 border-2 bg-white p-4">
-                <img alt="ecommerce" className="rounded object-cover" src="src/assets/dress.jpg" />
+            <div className="flex-1 border-2 bg-white p-4 min-w-0">
+                <img 
+                    alt="ecommerce" 
+                    className="w-full h-auto  object-cover" 
+                    src="src/assets/dress.jpg" 
+                />
             </div>
 
             {/* <!-- Form Section --> */}
-            <div className="flex-1 bg-white p-4">
+            <div className="flex-1 bg-white p-4 min-w-0">
                 <div className="mb-6">
                     <h1 className="text-xl font-bold text-gray-800">Lace Applied for them</h1>
                     <span className="text-sm text-gray-600">DB Studio</span>
@@ -20,10 +24,9 @@ export function Cart_Card() {
                     <label className="block text-sm font-medium text-gray-700">Rental Period</label>
                     <div className="flex flex-col gap-4 md:flex-row md:items-center">
                         <div className="flex items-center gap-4">
-                            <span className="text-gray-600">From:</span>
                             <input
                                 type="date"
-                                className="w-full rounded border px-4 py-2 text-gray-700 focus:ring-2 focus:ring-blue-500"
+                                className="w-full  border px-4 py-2 text-gray-700 focus:ring-2 focus:ring-blue-500"
                             />
                         </div>
                     </div>
@@ -34,7 +37,7 @@ export function Cart_Card() {
                     <label className="block text-sm font-medium text-gray-700">Size</label>
                     <input
                         type="number"
-                        className="w-full rounded border px-4 py-2 text-gray-700 focus:ring-2 focus:ring-blue-500"
+                        className="w-full  border px-4 py-2 text-gray-700 focus:ring-2 focus:ring-blue-500"
                         placeholder="Enter size"
                     />
                 </div>
@@ -44,18 +47,20 @@ export function Cart_Card() {
                     <label className="block text-sm font-medium text-gray-700">Number of Dresses</label>
                     <input
                         type="number"
-                        value="5"
-                        className="w-full rounded border px-4 py-2 text-gray-700 focus:ring-2 focus:ring-blue-500"
+                        defaultValue="5"
+                        className="w-full  border px-4 py-2 text-gray-700 focus:ring-2 focus:ring-blue-500"
                         placeholder="Enter number of dresses"
                     />
                 </div>
             </div>
 
             {/* <!-- Price Card --> */}
-            <div className="flex-1 border-2 bg-white p-4 ">
-                <div className="mb-6 p-4 ">
+            <div className="flex-1 border-2 bg-white p-4 min-w-0">
+                <div className="mb-6 p-4">
                     <div className="flex items-center justify-between">
-                        <h1 className="text-2xl font-semibold text-gray-800">$65 <span className="text-sm text-gray-600">For Rent</span></h1>
+                        <h1 className="text-2xl font-semibold text-gray-800">
+                            $65 <span className="text-sm text-gray-600">For Rent</span>
+                        </h1>
                     </div>
                     <hr className="my-4 border-t border-gray-300" />
                     <div className="flex items-center justify-between">
@@ -83,5 +88,5 @@ export function Cart_Card() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
