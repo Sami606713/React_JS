@@ -51,7 +51,7 @@ export default function Fit_Guide() {
       {/* People like */}
       <div>
         <div className="w-[90vw] sm:w-[70vw] lg:w-[50vw] mx-auto mt-10">
-          <h1 className="text-3xl sm:text-4xl lg:text-6xl text-center font-bold">
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl text-center font-bold text-black mb-4">
             1000+ People find their perfect size
           </h1>
         </div>

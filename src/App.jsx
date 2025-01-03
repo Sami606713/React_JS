@@ -8,6 +8,7 @@ import Rental_Policy from './pages/rental_policy.jsx'
 import Header from './components/web/header/header.jsx'
 import Footer from './components/web/footer/footer.jsx'
 import { Dress_Detail } from './pages/dress_detail.jsx'
+import FAQ from './pages/faq.jsx'
 import Cart_Page from './pages/cart_page.jsx'
 import Fit_Guide from './pages/fit_guide.jsx'
 import Collections from './pages/collections.jsx'
@@ -32,6 +33,7 @@ function App() {
             <Route path="/collection" element={<Collections />} />
             <Route path="/dress_detail" element={<Dress_Detail />} />
             <Route path="/cart" element={<Cart_Page />} />
+            <Route path="/faq" element={<FAQ />} />
           </Routes>
           <Footer/>
         </BrowserRouter>

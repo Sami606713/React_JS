@@ -15,6 +15,7 @@ export default function Footer() {
               <NavLink to="/contact" className="mr-5 hover:text-white">Contact Us</NavLink>
               <NavLink to="/policies" className="mr-5 hover:text-white">Rental/Return Policy</NavLink>
               <NavLink to="/guide" className="mr-5 hover:text-white">Fit Guide</NavLink>
+              <NavLink to="/faq" className="mr-5 hover:text-white">FAQs</NavLink>
             </nav>
           </div>
         </header>
