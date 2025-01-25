@@ -1,8 +1,10 @@
 import React from 'react'
 import { Fit_Guide_Card } from '../components/web/cards/fit_guide_card'
 import { Slider } from '../components/web/sliders/slider'
+import { useNavigate} from 'react-router-dom'
 
 export default function Fit_Guide() {
+  const navigate = useNavigate()
   const products = [
     {
       "id": 1,
@@ -39,7 +41,13 @@ export default function Fit_Guide() {
 
         <div className='mt-4 text-1xl'>
           <button className='border-2 border-black px-7 py-3 bg-black text-white hover:bg-white
-           hover:text-black'> Start Fit Guide</button>
+           hover:text-black'
+          onClick={
+            ()=>{
+              navigate('/guide/page')
+            }
+          }
+           > Start Fit Guide</button>
         </div>
       </section>
 

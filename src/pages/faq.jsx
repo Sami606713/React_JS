@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react'
 
 export default function FAQ() {
-  const [faqs, setFaq] = useState("Faq")
   return (
     <div>
       <div>
@@ -14,27 +13,21 @@ export default function FAQ() {
 
         <div className="border mt-5 flex gap-5">
           <div className="border-black border-2 w-[20vw] flex flex-col ">
-            <button className="border-t-2 px-5 py-2 hover:bg-pink-100 hover:font-bold" onClick={
-              () => setFaq("Rental")
-            }>Rental</button>
-            <button className="border-t-2 px-5 py-2 hover:bg-pink-100 hover:font-bold" onClick={
-              ()=>setFaq("Returns")
-            }>Returns</button>
-            <button className="border-t-2 px-5 py-2 hover:bg-pink-100 hover:font-bold" onClick={
-              ()=>setFaq("Shipping")
-            }>Shipping</button>
+            <button className="border-t-2 px-5 py-2 hover:bg-pink-100 hover:font-bold" >Rental</button>
+            <button className="border-t-2 px-5 py-2 hover:bg-pink-100 hover:font-bold" >Returns</button>
+            <button className="border-t-2 px-5 py-2 hover:bg-pink-100 hover:font-bold" >Shipping</button>
 
-            <button className="border-t-2 px-5 py-2 hover:bg-pink-100 hover:font-bold" onClick={
-              ()=>setFaq()
-            }>Bridal HQ</button>
+            <button className="border-t-2 px-5 py-2 hover:bg-pink-100 hover:font-bold">Bridal HQ</button>
 
-            <button className="border-t-2 px-5 py-2 hover:bg-pink-100 hover:font-bold" onClick={
-              ()=>setFaq("Popular Question")
-            }>Popular Question</button>
+            <button className="border-t-2 px-5 py-2 hover:bg-pink-100 hover:font-bold" 
+            >Popular Question</button>
           </div>
 
           <div className="border-black border-2 w-[80vw]">
-                <h1>{faqs}</h1>
+                <select className="border-2 border-black w-[100%] h-10"> 
+
+                  <option value="1">How do I return my order?</option>
+                </select>
           </div>
         </div>
 

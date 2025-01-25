@@ -8,6 +8,7 @@ import Rental_Policy from './pages/rental_policy.jsx'
 import Header from './components/web/header/header.jsx'
 import Footer from './components/web/footer/footer.jsx'
 import { Dress_Detail } from './pages/dress_detail.jsx'
+import { Fit_Guide_Page } from './pages/fit_guide_pages/fit_guide_page.jsx'
 import FAQ from './pages/faq.jsx'
 import Cart_Page from './pages/cart_page.jsx'
 import Fit_Guide from './pages/fit_guide.jsx'
@@ -28,6 +29,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/policies" element={<Rental_Policy />} />
             <Route path="/guide" element={<Fit_Guide />} />
+            <Route path="/guide/page" element={<Fit_Guide_Page />} />
             <Route path="/try-home" element={<Home_Try_On />} />
             <Route path="/bridal-party" element={<Bridal_Party />} />
             <Route path="/collection" element={<Collections />} />
